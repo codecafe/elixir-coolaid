@@ -6,6 +6,9 @@ dynamo_release = 'elixir-0.10.0'
 elixir_dir = '/opt/elixir'
 dynamo_dir = '/opt/dynamo'
 
+erl_ver = '5.10.2' # BEAM ver (just for verification purposes)
+# Would be nice if I could just look for 16B etc
+
 case node['platform_family']
 when 'rhel'
   pkg_prov = Chef::Provider::Package::Rpm
@@ -27,6 +30,7 @@ when 'debian'
 end
 
 erlpkg_file = '/tmp/esl-erlang.pkgtype'
+
 ##### chef resources
 
 packages.each do |pkg|
@@ -41,7 +45,7 @@ end
 package 'esl-erlang' do
   source erlpkg_file
   provider pkg_prov
-  not_if 'erl -version 2>&1| grep 5.10.2'
+  not_if "erl -version 2>&1| grep #{erl_ver}"
 end
 
 git elixir_dir do
