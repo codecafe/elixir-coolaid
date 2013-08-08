@@ -1,7 +1,8 @@
 To use install http://www.opscode.com/chef/install/ on centos 6 or ubuntu 13.04 then:
 
 ```
-git clone git@github.com:codecafe/coolaid.git
+apt-get install -y git
+git clone https://github.com/codecafe/coolaid.git
 chef-apply coolaid/recipe.rb
 ```
 
