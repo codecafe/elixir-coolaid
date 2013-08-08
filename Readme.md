@@ -1,5 +1,8 @@
-To use install http://www.opscode.com/chef/install/ on centos 6 or ubuntu 13.04 then:
+To use install http://www.opscode.com/chef/install/ on centos 6 or ubuntu 13.04 
 
+Usually that simply means:
+
+```curl -L https://www.opscode.com/chef/install.sh | sudo bash```
 
 Install GIT if it is not already installed:
  * Ubuntu/Debian: ```sudo apt-get install -y git```
@@ -7,7 +10,9 @@ Install GIT if it is not already installed:
 
 Download this repo with ```git clone https://github.com/codecafe/coolaid.git```
 
-Let Chef do the rest ```chef-apply coolaid/recipe.rb```
+Edit the coolaid/recipe.rb to specify the git refs etc.  Then let Chef do the rest by running ```chef-apply coolaid/recipe.rb```
+
+### Testing with Vagrant
 
 To test install http://downloads.vagrantup.com/tags/v1.2.7
 and http://dlc.sun.com.edgesuite.net/virtualbox/4.2.16/SHA256SUMS then:
