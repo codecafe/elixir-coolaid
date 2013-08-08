@@ -1,3 +1,8 @@
+#
+# Author(s): Chris McClimans <chris@hippiehacker.org>,
+#            Taylor Carpenter <taylor@codecafe.com>
+# License: Released under the MIT License.
+
 ##### attributes / variables
 
 elixir_release = 'bb4874' # or 'v0.10.2-dev'
