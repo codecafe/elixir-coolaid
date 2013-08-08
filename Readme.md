@@ -1,13 +1,13 @@
 To use install http://www.opscode.com/chef/install/ on centos 6 or ubuntu 13.04 then:
 
 
-# Install GIT
-```sudo apt-get install -y git``` or ```sudo yum install -y git```
+Install GIT if it is not already installed:
+ * Ubuntu/Debian: ```sudo apt-get install -y git```
+ * Centos: ```sudo yum install -y git```
 
-```
-git clone https://github.com/codecafe/coolaid.git
-sudo chef-apply coolaid/recipe.rb
-```
+Download this repo with ```git clone https://github.com/codecafe/coolaid.git```
+
+Let Chef do the rest ```chef-apply coolaid/recipe.rb```
 
 To test install http://downloads.vagrantup.com/tags/v1.2.7
 and http://dlc.sun.com.edgesuite.net/virtualbox/4.2.16/SHA256SUMS then:
