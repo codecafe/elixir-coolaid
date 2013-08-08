@@ -12,6 +12,8 @@ Download this repo with ```git clone https://github.com/codecafe/coolaid.git```
 
 Edit the coolaid/recipe.rb to specify the git refs etc.  Then let Chef do the rest by running ```chef-apply coolaid/recipe.rb```
 
+---
+
 ### Testing with Vagrant
 
 To test install http://downloads.vagrantup.com/tags/v1.2.7
