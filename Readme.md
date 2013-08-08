@@ -1,9 +1,12 @@
 To use install http://www.opscode.com/chef/install/ on centos 6 or ubuntu 13.04 then:
 
+
+# Install GIT
+```sudo apt-get install -y git``` or ```sudo yum install -y git```
+
 ```
-apt-get install -y git
 git clone https://github.com/codecafe/coolaid.git
-chef-apply coolaid/recipe.rb
+sudo chef-apply coolaid/recipe.rb
 ```
 
 To test install http://downloads.vagrantup.com/tags/v1.2.7
