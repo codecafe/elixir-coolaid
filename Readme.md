@@ -29,7 +29,7 @@ Download this repo with ```git clone https://github.com/codecafe/coolaid.git```
 
 Edit the coolaid/recipe.rb to specify the versions, branches, tags for the software.
 
-Then let Chef do the rest by running ```chef-apply coolaid/recipe.rb```
+Then let Chef do the rest by running ```sudo chef-apply coolaid/recipe.rb```
 
 
 Testing with Vagrant
@@ -51,8 +51,10 @@ Author
 
 Original authors:
 
-* [Chris McClimans](https://github.com/hh)
-* [Taylor Carpenter](https://github.com/taylor)
+ * [Chris McClimans](https://github.com/hh)
+ * [Taylor Carpenter](https://github.com/taylor)
+
+Thanks to [Watson](https://github.com/wavell) and [Ayori](https://github.com/iayori) for the walk-thru documentaion created at LSRC 2013.
 
 Contributions
 -------------
