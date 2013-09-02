@@ -5,9 +5,11 @@
 
 ##### attributes / variables
 
-elixir_release = 'bb4874' # or 'v0.10.2-dev'
+#elixir_release = 'bb4874' # or 'v0.10.2-dev'
+elixir_release = 'v0.10.2-dev' # or 'v0.10.2-dev'
 rebar_release = '2.0.0'
-dynamo_release = '82aa4c' # or 'elixir-0.10.0'
+#dynamo_release = '82aa4c' # or 'elixir-0.10.0'
+dynamo_release = 'elixir-0.10.1' # or 'elixir-0.10.0'
 elixir_dir = '/opt/depot/elixir'
 dynamo_dir = '/opt/depot/dynamo'
 
